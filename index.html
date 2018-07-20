@@ -15,148 +15,27 @@
     <link href="./css/lightbox.css" rel="stylesheet" type="text/css">
     <link href="./css/new_general.css" rel="stylesheet" type="text/css">
     <base target="_blank" />
+    <style type="text/css" media="screen">
+      #nm_time_keeper,#nm_shout_macro{display:inline-block;vertical-align:top;}#nm_shout_macro{width:365px;margin-left:5px;padding-left:5px;}.nm_list{border:1px solid #fff;background-color:#000;border-radius:3px;margin-bottom:2px;padding:1px 5px;}.nm_list.check{background-color:#383;}.nm_list.check.over_two_hour{background-color:#335;}.ele_icon{width:15px;vertical-align:middle;margin-top:-2px;}.nm_list td:nth-child(1){width:32px;}.nm_list td:nth-child(2){width:200px;}.nm_list td:nth-child(3){width:100px;}.nm_list td:nth-child(3) input{width:90px;padding-left:10px;margin-right:10px;}button{align-items:flex-start;text-align:center;cursor:default;color:buttontext;background-color:buttonface;box-sizing:border-box;padding:0px 6px;border-width:2px;border-style:outset;border-color:buttonface;border-image:initial;}.reset img{width:17px;vertical-align:top;}label{cursor:pointer;}.template_box{display:inline-block;}#make_macro_btn:hover,#copy_textarea_btn:hover,#import_text_btn:hover,#all_reset_btn:hover{background-color:#fc0;color:#000;}.shout_macro_text{width:360px;height:200px;}#import_text_btn,#all_reset_btn{margin-bottom:5px;margin-top:1px;}.map_thumb{width:360px;}.selected_language{float:right;}.selected_language .link.current{text-decoration:underline;}.go_to_top.gorilla{bottom:10px !important;transform:none !important;background-color:rgba(0,0,0,0) !important;}.go_to_top.gorilla:hover{animation:hurueru .1s infinite;}@keyframes hurueru{0%{transform:translate(0px,0px) rotateZ(0deg)}25%{transform:translate(2px,2px) rotateZ(1deg)}50%{transform:translate(0px,2px) rotateZ(0deg)}75%{transform:translate(2px,0px) rotateZ(-1deg)}100%{transform:translate(0px,0px) rotateZ(0deg)}}.link{color:#3087cc;}.link:hover{text-decoration:underline;}
+    </style>
 </head>
-
 <body>
 <div id="view_container">
-<style type="text/css" media="screen">
-    #nm_time_keeper,
-    #nm_shout_macro {
-        display: inline-block;
-        vertical-align: top;
-    }
-    #nm_shout_macro {
-        width: 365px;
-        margin-left: 5px;
-        padding-left: 5px;
-    }
-    .nm_list {
-        border: 1px solid #fff;
-        background-color: #000;
-        border-radius: 3px;
-        margin-bottom: 2px;
-        padding: 1px 5px;
-    }
-    .nm_list.check {
-        background-color: #383;
-    }
-    .nm_list.check.over_two_hour {
-        background-color: #335;
-    }
-    .ele_icon {
-        width: 15px;
-        vertical-align: middle;
-        margin-top: -2px;
-    }
-    .nm_list td:nth-child(1) {
-        width: 32px;
-    }
-    .nm_list td:nth-child(2) {
-        width: 200px;
-    }
-    .nm_list td:nth-child(3) {
-        width: 100px;
-    }
-    .nm_list td:nth-child(3) input {
-        width: 90px;
-        padding-left: 10px;
-        margin-right: 10px;
-    }
-    button {
-        align-items: flex-start;
-        text-align: center;
-        cursor: default;
-        color: buttontext;
-        background-color: buttonface;
-        box-sizing: border-box;
-        padding: 0px 6px;
-        border-width: 2px;
-        border-style: outset;
-        border-color: buttonface;
-        border-image: initial;
-    }
-    .reset img {
-        width: 17px;
-        vertical-align: top;
-    }
-    label {
-        cursor: pointer;
-    }
-    .template_box {
-        display: inline-block;
-    }
-    #make_macro_btn:hover,
-    #copy_textarea_btn:hover,
-    #import_text_btn:hover,
-    #all_reset_btn:hover {
-        background-color: #fc0;
-        color: #000;
-    }
-    .shout_macro_text {
-        width: 360px;
-        height: 200px;
-        /*margin-bottom: 55px;*/
-    }
-    #import_text_btn,
-    #all_reset_btn {
-        margin-bottom: 5px;
-        margin-top: 1px;
-    }
-    .map_thumb {
-        width: 360px;
-    }
-    .selected_language {
-        float: right;
-    }
-    .selected_language .link.current {
-        text-decoration: underline;
-    }
-    .go_to_top.gorilla {
-        bottom: 10px !important;
-        transform: none !important;
-        background-color: rgba(0,0,0,0) !important;
-    }
-    .go_to_top.gorilla:hover {
-      animation: hurueru .1s infinite;
-    }
-    @keyframes hurueru {
-        0% {transform: translate(0px, 0px) rotateZ(0deg)}
-        25% {transform: translate(2px, 2px) rotateZ(1deg)}
-        50% {transform: translate(0px, 2px) rotateZ(0deg)}
-        75% {transform: translate(2px, 0px) rotateZ(-1deg)}
-        100% {transform: translate(0px, 0px) rotateZ(0deg)}
-    }
-    .link{
-      color: #3087cc;
-    }
-    .link:hover{text-decoration: underline;}
-</style>
-
-    <div id="stage">
-
-        NM讨伐时间管理：常风之地 ver:patch4.25
-        <hr>
-
-        <div id="nm_time_keeper"></div>
-        <div id="nm_shout_macro"></div>
-
-        <hr>
-
-        <div class="size_S">
-            声明及说明：<br>
-            1.原作者：<a class="link" href="http://ff14moo.moo.jp/eureka_nm_timekeeper.html">http://ff14moo.moo.jp/eureka_nm_timekeeper.html</a> 推特传送门： <a class="link" href="https://twitter.com/moomoo_ffxiv" target="blank">Twitter</a><br/>
-            2.支持原名导入及简称导入，但是匹配词段不多，遇到无法导入时可以手动校准。<br/>
-            3.地图来自NGA大佬<a class="link" href="http://bbs.ngacn.cc/read.php?tid=14543984">猫之优雅</a><br/>
-            4.问题反馈<a class="link" href="https://weibo.com/freeforver">微博</a>敲我私信即可
-        </div>
-        <br>
-
-    </div>
-
-<script type="text/javascript">
-
-</script>
-
+  <div id="stage">
+      NM讨伐时间管理：常风之地 ver:patch4.25
+      <hr>
+      <div id="nm_time_keeper"></div>
+      <div id="nm_shout_macro"></div>
+      <hr>
+      <div class="size_S">
+          声明及说明：<br>
+          1.原作者：<a class="link" href="http://ff14moo.moo.jp/eureka_nm_timekeeper.html">むーむー(MooMoo')</a> ， <a class="link" href="https://twitter.com/moomoo_ffxiv" target="blank">Twitter</a><br/>
+          2.支持原名导入及简称导入，但是匹配词段不多，遇到无法导入时可以手动校准。<br/>
+          3.地图来自NGA大佬<a class="link" href="http://bbs.ngacn.cc/read.php?tid=14543984">猫之优雅</a><br/>
+          4.问题反馈<a class="link" href="https://weibo.com/freeforver">微博</a>敲我私信即可
+      </div>
+      <br>
+  </div>
 </div>
 </body>
 </html>
