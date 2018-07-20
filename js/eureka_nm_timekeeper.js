@@ -15,26 +15,26 @@ $(function(){
 });
 
 var nm_array = [
-    ['1', '科里多仙人刺',   'A', '【1】仙人掌' ,'Sabotender Corrido',   'Saboten'],
-    ['2', '常风领主',   'W', '【2】章鱼'    ,'The Load id Anemos',   'Tako'],
-    ['3', '忒勒斯',            'A', '【3】鸟人'   ,'Teles',               'Teles'],
-    ['4', '常风皇帝',   'A', '【4】蜻蜓'  ,'Emperor of Anemos',    'Emperor'],
-    ['5', '卡利斯托',           'E', '【5】熊'  ,'Callist',              'Callist'],
-    ['6', '群偶',         'L', '【6】群偶'   ,'Number',               'Number'],
-    ['7', '哲罕南',        'A', '【7】台风'  ,'Jahannam',             'Jahn'],
-    ['8', '阿米特',          'F', '【8】龙'   ,'Amemet',               'Amemet'],
-    ['9', '盖因',            'I', '【9】席兹'   ,'Caym',                 'Caym'],
-    ['10', '庞巴德',      'E', '【10】贪吃鬼'   ,'Bombadeel',            'Bomber'],
-    ['11', '塞尔凯特',          'E', '【11】虾' ,'Serket',               'Serket'],
-    ['12', '武断魔花茱莉卡','I', '【12】魔界花'  ,'Judgmental Julika',    'Julika'],
-    ['13', '白骑士',     'L', '【13】无头骑士'  ,'White Rider',          'Rider'],
-    ['14', '波吕斐摩斯',       'I', '【14】独眼'   ,'Polyphemus',           'Polyp'],
-    ['15', '阔步西牟鸟','A', '【15】祖' ,'Simurgh\'s Strider',    'Simurgh'],
-    ['16', '极其危险物质',    'F', '【16】爆弹怪'  ,'King Hazmat',           'King'],
-    ['17', '法夫纳',         'F', '【17】法夫纳'  ,'Fafnir',                'Fafnir'],
-    ['18', '阿玛洛克',         'I', '【18】阿玛洛克'  ,'Amarok',                'Rock'],
-    ['19', '拉玛什图',        'A', '【19】拉玛什图' ,'Lamashtu',              'Lama'],
-    ['20', '帕祖祖',           'A', '【20】帕祖祖'  ,'Pazuzu',                'Pazuzu']
+    ['1', '科里多仙人刺', 'A', '仙人掌', '科里多仙人刺', 'Saboten'],
+    ['2', '常风领主', 'W', '章鱼', '常风领主', 'Tako'],
+    ['3', '忒勒斯', 'A', '鸟人', '忒勒斯', 'Teles'],
+    ['4', '常风皇帝', 'A', '蜻蜓', '常风皇帝', 'Emperor'],
+    ['5', '卡利斯托', 'E', '巨熊', '卡利斯托', 'Callist'],
+    ['6', '群偶', 'L', '群偶', '群偶', 'Number'],
+    ['7', '哲罕南', 'A', '台风', '哲罕南', 'Jahn'],
+    ['8', '阿米特', 'F', '暴龙', '阿米特', 'Amemet'],
+    ['9', '盖因', 'I', '席兹', '盖因', 'Caym'],
+    ['10', '庞巴德', 'E', '贪吃鬼' , '庞巴德', 'Bomber'],
+    ['11', '塞尔凯特', 'E', '皮皮虾', '塞尔凯特', 'Serket'],
+    ['12', '武断魔花茱莉卡', 'I', '魔界花', '武断魔花茱莉卡', 'Julika'],
+    ['13', '白骑士', 'L', '无头骑士', '白骑士', 'Rider'],
+    ['14', '波吕斐摩斯', 'I', '独眼', '波吕斐摩斯', 'Polyp'],
+    ['15', '阔步西牟鸟', 'A', '祖', '阔步西牟鸟', 'Simurgh'],
+    ['16', '极其危险物质', 'F', '爆弹怪', '极其危险物质', 'King'],
+    ['17', '法夫纳', 'F', '法夫纳', '法夫纳', 'Fafnir'],
+    ['18', '阿玛洛克', 'I', '阿玛洛克', '阿玛洛克', 'Rock'],
+    ['19', '拉玛什图', 'A', '拉玛什图', '拉玛什图', 'Lama'],
+    ['20', '帕祖祖', 'A', '帕祖祖', '帕祖祖', 'Pazuzu']
 ];
 
 function nm_list_layout() {
@@ -95,7 +95,7 @@ function shout_macro_layout(){
     $('#nm_shout_macro .template_box.box2').append('　<label for="chat_3"><input type="radio" name="chat_type" id="chat_3" value="chat_3">/party</label><br>')
     $('#nm_shout_macro').append('<a id="make_macro_btn" class="btn_M center">文本生成</a>')
     $('#nm_shout_macro').append('<a id="copy_textarea_btn" class="btn_M center">复制到剪切板</a><br>')
-    $('#nm_shout_macro').append('<textarea class="shout_macro_text">点击“文本生成”后，以左侧的预览为基础生成文本。&#13;&#13;【5】熊[05:05]、【6】群偶[06:06]、【7】台风[07:07]、【8】龙[08:08]、【1】仙人掌[01:01]、【2】章鱼[02:02]、【3】鸟人[03:03]、【4】蜻蜓[04:04]&#13;&#13;如果是上述的文本形式，可以点击“导入”按钮导入网页。</textarea><br>')
+    $('#nm_shout_macro').append('<textarea class="shout_macro_text">点击“文本生成”后，将会以左侧的预览为基础生成文本。例如：\n\n仙人掌[00:00]、章鱼[01:01]、鸟人[03:03]、蜻蜓[05:05]、巨熊[07:07]、群偶[09:09]、台风[11:11]、暴龙[13:13]、席兹[15:15]、贪吃鬼[17:17]、皮皮虾[19:19]\n\n如果是上述的文本形式，可以点击“导入”按钮导入网页。（现在点击导入即可体验）</textarea><br>')
     $('#nm_shout_macro').append('<a id="import_text_btn" class="btn_M center">导入</a>')
     $('#nm_shout_macro').append('<a id="all_reset_btn" class="btn_M center">复位</a><br>')
     $('#nm_shout_macro').append('NM地图：<br>')
@@ -106,11 +106,17 @@ function import_text() {
     $(document).on('click', '#import_text_btn',function(){
         var import_array = [];
         var import_text  = $('.shout_macro_text').val();
-
+        var temp_text = import_text.split('\n\n');
+        // console.log(temp_text);
+        if (temp_text.length > 1) {
+          import_text = temp_text[1];
+        } else {
+          import_text = temp_text[0];
+        }
+        // console.log(import_text);
         import_array = import_text.split( '、' );
-        console.log(import_array);
+        // console.log(import_array);
         for (var i = import_array.length - 1; i >= 0; i--) {
-            import_array[i] = import_array[i].replace(/卡利斯托 /g,"卡利斯托");
             import_array[i] = import_array[i].replace(/ /g,"");
             import_array[i] = import_array[i].replace(/\[/g,"、");
             import_array[i] = import_array[i].replace(/\(/g,"、");
@@ -142,13 +148,13 @@ function import_text() {
         }
         for (var i = import_array.length - 1; i >= 0; i--) {
           for (var j = 0; j < nm_array.length; j++) {
-            if (import_array[i][0] == nm_array[j][3]) {
+            // console.log(import_array[i][0], nm_array[j][3])
+            if (import_array[i][0].indexOf(nm_array[j][3]) >= 0 || import_array[i][0].indexOf(nm_array[j][4]) >= 0) {
               $('#nm_' + (j + 1)).find('.hour').val(import_array[i][1]);
               $('#nm_' + (j + 1)).find('.minite').val(import_array[i][2]);
             }
           }
         }
-
         check_color();
     })
 }
@@ -258,6 +264,10 @@ function selected_language() {
 
 function make_shout_macro() {
     $('#make_macro_btn').click(function(){
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        now = Number(h + '' + m);
         var time_check_array = [];
         var macro_nm_array   = [];
         var macro_nm_array2  = [];
@@ -269,7 +279,7 @@ function make_shout_macro() {
             if ( nm_time == '----' ) {
                 time_check_array.push(2360);
             } else {
-                time_check_array.push(Number(nm_time));
+              time_check_array.push(Number(nm_time));
             }
         }
 
@@ -301,8 +311,13 @@ function make_shout_macro() {
             nm_array.push(Number(nm_el));
             nm_array.push(nm_name);
             nm_array.push(nm_text);
-            nm_array.push(nm_hour);
-            nm_array.push(nm_minite);
+            if (now - parseInt(nm_time) >= 200 || now - parseInt(nm_time) < 0) {
+              nm_array.push('--');
+              nm_array.push('--');
+            } else {
+              nm_array.push(nm_hour);
+              nm_array.push(nm_minite);
+            }
 
             macro_nm_array.push(nm_array);
         }
@@ -396,7 +411,16 @@ function make_shout_macro() {
         }
         for (var i = 0; i < macro_nm_array2.length; i++) {
             insert_textarea += macro_nm_array2[i][3];
-            insert_textarea += '['+macro_nm_array2[i][4]+':'+macro_nm_array2[i][5]+']';
+            var _srt = ''
+            // if ( macro_nm_array2[i][4] == 'up' || macro_nm_array2[i][5] == 'up' ) {
+            //   _srt = '可触发';
+            // } else if ( macro_nm_array2[i][4] == '--' || macro_nm_array2[i][5] == '--' ) {
+            //   _srt = '失联或可触发';
+            // } else {
+            //   _srt = macro_nm_array2[i][4]+':'+macro_nm_array2[i][5];
+            // }
+            _srt = macro_nm_array2[i][4]+':'+macro_nm_array2[i][5];
+            insert_textarea += '[' + _srt + ']';
             if ( macro_nm_array2.length != i+1 ) {
                 insert_textarea += '、';
             }
