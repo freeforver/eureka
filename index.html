@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>NM讨伐时间管理</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" >
+    <script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.cookie.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./js/fastclick.js"></script>
+    <script type="text/javascript" src="./js/cheet.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/eureka_nm_timekeeper.js"></script>
+    <script type="text/javascript" src="./js/lightbox.js"></script>
+
+    <link href="./css/lightbox.css" rel="stylesheet" type="text/css">
+    <link href="./css/new_general.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div id="view_container">
+<style type="text/css" media="screen">
+    #nm_time_keeper,
+    #nm_shout_macro {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #nm_shout_macro {
+        width: 365px;
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+    .nm_list {
+        border: 1px solid #fff;
+        background-color: #000;
+        border-radius: 3px;
+        margin-bottom: 2px;
+        padding: 1px 5px;
+    }
+    .nm_list.check {
+        background-color: #383;
+    }
+    .nm_list.check.over_two_hour {
+        background-color: #335;
+    }
+    .ele_icon {
+        width: 15px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+    .nm_list td:nth-child(1) {
+        width: 32px;
+    }
+    .nm_list td:nth-child(2) {
+        width: 200px;
+    }
+    .nm_list td:nth-child(3) {
+        width: 100px;
+    }
+    .nm_list td:nth-child(3) input {
+        width: 90px;
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+    button {
+        align-items: flex-start;
+        text-align: center;
+        cursor: default;
+        color: buttontext;
+        background-color: buttonface;
+        box-sizing: border-box;
+        padding: 0px 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonface;
+        border-image: initial;
+    }
+    .reset img {
+        width: 17px;
+        vertical-align: top;
+    }
+    label {
+        cursor: pointer;
+    }
+    .template_box {
+        display: inline-block;
+    }
+    #make_macro_btn:hover,
+    #copy_textarea_btn:hover,
+    #import_text_btn:hover,
+    #all_reset_btn:hover {
+        background-color: #fc0;
+        color: #000;
+    }
+    .shout_macro_text {
+        width: 360px;
+        height: 200px;
+        /*margin-bottom: 55px;*/
+    }
+    #import_text_btn,
+    #all_reset_btn {
+        margin-bottom: 5px;
+        margin-top: 1px;
+    }
+    .map_thumb {
+        width: 360px;
+    }
+    .selected_language {
+        float: right;
+    }
+    .selected_language .link.current {
+        text-decoration: underline;
+    }
+    .go_to_top.gorilla {
+        bottom: 10px !important;
+        transform: none !important;
+        background-color: rgba(0,0,0,0) !important;
+    }
+    .go_to_top.gorilla:hover {
+      animation: hurueru .1s infinite;
+    }
+    @keyframes hurueru {
+        0% {transform: translate(0px, 0px) rotateZ(0deg)}
+        25% {transform: translate(2px, 2px) rotateZ(1deg)}
+        50% {transform: translate(0px, 2px) rotateZ(0deg)}
+        75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+        100% {transform: translate(0px, 0px) rotateZ(0deg)}
+    }
+</style>
+
+    <div id="stage">
+
+        NM讨伐时间管理：常风之地 ver:patch4.25
+        <hr>
+
+        <div id="nm_time_keeper"></div>
+        <div id="nm_shout_macro"></div>
+
+        <hr>
+
+        <div class="size_S">
+            声明：<br>
+            本人学习使用<br>
+            日文原站http://ff14moo.moo.jp/eureka_nm_timekeeper.html<br>
+            汉化参考https://mirrorxiv.tk/<br>
+            如要扩散使用请扩上面这两位大佬的链接，谢谢~
+        </div>
+        <br>
+
+    </div>
+
+<script type="text/javascript">
+
+</script>
+
+</div>
+</body>
+</html>
